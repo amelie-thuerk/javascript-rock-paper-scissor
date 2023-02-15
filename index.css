@@ -1,0 +1,35 @@
+body {
+    background-color: #1F2833;
+}
+h1 {
+    font-size: 35px;
+    font-family: Tahoma;
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+}
+form {
+    font-family: Tahoma;
+    color: aliceblue;
+    font-size: 110%;
+    background-color: #0b0c10;
+    padding: 20px;
+    border-radius: 10px;
+}
+fieldset {
+    margin-bottom: 20px;
+}
+.confirm {
+    background-color: #1F2833;
+    color: white;
+    border: 1.5px solid #66FCF1;
+    font-family: Tahoma;
+    padding: 8px 24px;
+    border-radius: 12px;
+    transition-duration: 0.35s;
+    font-weight: bold;
+}
+.confirm:hover {
+    background-color: #66FCF1;
+    color: #1F2833;
+}
