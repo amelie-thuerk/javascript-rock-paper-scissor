@@ -1,70 +1,66 @@
 body {
     background-color: #1F2833;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+    color: white;
 }
+
 h1 {
     font-size: 40px;
-    font-family: Tahoma;
-    text-align: center;
-    color: aliceblue;
     padding: 20px;
+    text-align: center;
 }
+
 .container {
-    margin: 50px 235px 100px;
+    max-width: 700px;
+    margin: 0 auto;
 }
-.vertical {
-    border-left: 1px solid white;
-    height: 100%;
-    position:absolute;
-    left: 50%;
+
+.game {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
-form {
-    font-family: Tahoma;
-    color: aliceblue;
-    font-size: 25px;
-    /* background-color: #0B0C10; */
+
+.game-input, .game-output {
+    background-color: #0B0C10;
+    font-size: 21px;
     padding: 20px;
     border-radius: 10px;
     width: 250px;
 }
-.container .background {
-    width: 400px;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    background-color: #0B0C10;
+
+#Rock, #Paper, #Scissor{
+    accent-color: #66FCF1;
+}
+
+.game-input-fieldset {
     border-radius: 12px;
-    height: 300px;
-}
-#Rock {
-    accent-color: #66FCF1;
-}
-#Paper {
-    accent-color: #66FCF1;
-}
-#Scissor {
-    accent-color: #66FCF1;
-}
-fieldset {
     margin-bottom: 20px;
-    margin-top: 50px;
-    border-radius: 12px;
-    display: inline-block;
-    height: 120px;
 }
+
+.game-input-legend {
+    font-size: 25px;
+    text-align: center;
+}
+
+::selection {
+    background: #66FCF1;
+    color: #0B0C10;
+}
+
 .confirm {
     background-color: #0B0C10;
     color: white;
     border: 1.5px solid #66FCF1;
-    font-family: Tahoma;
     padding: 8px 24px;
     border-radius: 12px;
     transition-duration: 0.35s;
     font-weight: bold;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 40px;
+    margin: 0 70px;
 }
+
 .confirm:hover {
     background-color: #66FCF1;
     color: #1F2833;
