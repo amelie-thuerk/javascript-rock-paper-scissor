@@ -2,25 +2,58 @@ body {
     background-color: #1F2833;
 }
 h1 {
-    font-size: 35px;
+    font-size: 40px;
     font-family: Tahoma;
     text-align: center;
     color: aliceblue;
     padding: 20px;
 }
+.container {
+    margin: 50px 235px 100px;
+}
+.vertical {
+    border-left: 1px solid white;
+    height: 100%;
+    position:absolute;
+    left: 50%;
+}
 form {
     font-family: Tahoma;
     color: aliceblue;
-    font-size: 110%;
-    background-color: #0b0c10;
+    font-size: 25px;
+    /* background-color: #0B0C10; */
     padding: 20px;
     border-radius: 10px;
+    width: 250px;
+}
+.container .background {
+    width: 400px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #0B0C10;
+    border-radius: 12px;
+    height: 300px;
+}
+#Rock {
+    accent-color: #66FCF1;
+}
+#Paper {
+    accent-color: #66FCF1;
+}
+#Scissor {
+    accent-color: #66FCF1;
 }
 fieldset {
     margin-bottom: 20px;
+    margin-top: 50px;
+    border-radius: 12px;
+    display: inline-block;
+    height: 120px;
 }
 .confirm {
-    background-color: #1F2833;
+    background-color: #0B0C10;
     color: white;
     border: 1.5px solid #66FCF1;
     font-family: Tahoma;
@@ -28,6 +61,9 @@ fieldset {
     border-radius: 12px;
     transition-duration: 0.35s;
     font-weight: bold;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 40px;
 }
 .confirm:hover {
     background-color: #66FCF1;

@@ -9,27 +9,29 @@
     <title>Rock Paper Scissor</title>
 </head>
 <body>
-    <div id="sub-bg">
-
-    </div>
     <h1 id="headline">Rock Paper Scissor</h1>
-    <form>
-        <fieldset>
-            <legend>Select your option:</legend>
-            <div>
-                <input type="radio" id="Rock" name="option" value="Rock">
-                <label for="Rock" class="light">Rock</label>
+    <div class="container">
+        <div class="vertical"></div>
+        <form>
+            <div class="background">
+                <fieldset>
+                    <legend>Select your option</legend>
+                    <div>
+                        <input type="radio" id="Rock" name="option" value="Rock">
+                        <label for="Rock" class="light">Rock</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Paper" name="option" value="Paper">
+                        <label for="Paper" class="light">Paper</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Scissor" name="option" value="Scissor">
+                        <label for="Scissor" class="light">Scissor</label>
+                    </div>
+                </fieldset>
+                <button type="submit" class="confirm">Confirm</button>
             </div>
-            <div>
-                <input type="radio" id="Paper" name="option" value="Paper">
-                <label for="Paper" class="light">Paper</label>
-            </div>
-            <div>
-                <input type="radio" id="Scissor" name="option" value="Scissor">
-                <label for="Scissor" class="light">Scissor</label>
-            </div>
-        </fieldset>
-        <button type="submit" class="confirm">Confirm</button>
-    </form>
+        </form>
+    </div>
 </body>
 </html>
