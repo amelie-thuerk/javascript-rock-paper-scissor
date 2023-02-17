@@ -23,27 +23,37 @@ form.addEventListener("submit", function (event) {
     const computerChoice = choices[Math.floor(Math.random() * choices.length)]
     
     if (userChoice === computerChoice) {
-        output.innerHTML = `<div class="result">draw</div>`
-    } else if (userChoice === inputs[0].value && computerChoice === inputs[2].value) {
-        output.innerHTML = `<div class="result"> you win</div>`
-        userCounter++
-    } else if (userChoice === inputs[1].value && computerChoice === inputs[0].value) {
-        output.innerHTML = `<div class="result">you win</div>`
-        userCounter++
-    } else if (userChoice === inputs[2].value && computerChoice === inputs[1].value) {
-        output.innerHTML = `<div class="result">you win</div>`
+        result = "draw"
+    } else if (userChoice === inputs[0].value && computerChoice === choices[2]
+        || userChoice === inputs[1].value && computerChoice === choices[0]
+        || userChoice === inputs[2].value && computerChoice === choices[1]) {
+        result = "you win"
         userCounter++
     } else {
-        output.innerHTML = `<div class="result">you lose</div>`
+        result = "you lose"
         comCounter++
     }
     
-    output.innerHTML += `
-        <div class="user">You</div>
-        <div class="com">Enemy</div>
-        <div class="user-choice">${userChoice}</div>
-        <div class="com-choice">${computerChoice}</div>`
-
-    output.innerHTML += `
-        <div class="score">${userCounter} ${comCounter}</div>`
+    output.innerHTML = `
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">${result}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>You</td>
+                    <td>Enemy</td>
+                </tr>
+                <tr>
+                    <td>${userChoice}</td>
+                    <td>${computerChoice}</td>
+                </tr>
+                <tr>
+                    <td>${userCounter}</td>
+                    <td>${comCounter}</td>
+                </tr>
+            </tbody>
+        </table>`;
 })  
